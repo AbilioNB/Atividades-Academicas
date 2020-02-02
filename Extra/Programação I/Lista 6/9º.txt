@@ -1,0 +1,68 @@
+9)
+#include <stdio.h>
+
+int main() {
+
+	
+	float sl_i, au, sl_l;
+	char resp='s';
+
+
+	while (resp == 's')
+{
+		printf("Informe seu sálario atual: ");
+		scanf("%f", &sl_i);
+		
+		while (sl_i < 880)
+		{
+			printf("´SALÁRIO INVÁLIDO!!!\n");
+			printf("Informe um salário válido:\n");
+			scanf("%f", &sl_i);
+		}
+		if (sl_i <= 1500)
+		{
+			au = sl_i*0.20;
+			sl_l = sl_i + au;
+			printf("O funcionário terá aumento de R$ %.1f e passará  a receber R$ %.1f \n", au, sl_l);
+
+		}
+		else if (sl_i > 1500 && sl_i <= 2500)
+		{
+			au = sl_i*0.15;
+			sl_l = sl_i + au;
+			printf("O funcionário terá aumento de R$ %.1f e passará  a receber R$ %.1f \n", au, sl_l);
+		}
+		else if (sl_i > 2500 && sl_i <= 4000)
+		{
+			au = sl_i*0.10;
+			sl_l = sl_i + au;
+			printf("O funcionário terá aumento de R$ %.1f e passará  a receber R$ %.1f \n", au, sl_l);
+		}
+		else if (sl_i > 4000)
+		{
+			au = sl_i*0.05;
+			sl_l = sl_i + au;
+			printf("O funcionário terá aumento de R$ %.1f e passará  a receber R$ %.1f \n", au, sl_l);
+		}
+	
+	printf("Deseja continuar executando o programa  ? (s/n)");
+	scanf(" %c", &resp);
+
+		while (resp != 's'&&resp!= 'n'&&resp !='S'&&resp!='N')
+		{
+			printf("OPÇÃO INVÁLIDO!!!\n");
+			printf("Informe [s] se deseja continuar e [n] se deseja encerrar ! \n");
+			scanf(" %c", &resp);
+		}
+
+	if (resp == 'n'|| resp =='N')
+	{
+		resp = 'n';
+		
+	}
+
+
+}
+	
+	return 0;
+}

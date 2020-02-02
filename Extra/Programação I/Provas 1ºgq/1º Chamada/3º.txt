@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+	//var
+	int max_linha = 0, num = 0, num_temp = 0;
+
+	//exec
+	printf("digite um numero inteiro positivo:");
+	scanf("%i", &num);
+	while (num <= 0)
+	{
+		printf("Numero invalido ! digite um numero inteiro positivo:");
+		scanf("%i", &num);
+	}
+	while (max_linha < num)
+	{
+		max_linha = max_linha + 1;
+		while (num_temp < max_linha) {
+			num_temp = num_temp + 1;
+			printf("%i ", num_temp);
+		}
+		printf("\n");
+		num_temp = 0;
+	}
+	return 0;
+}

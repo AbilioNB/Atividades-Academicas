@@ -1,0 +1,76 @@
+7)
+
+#include <stdio.h>
+
+int main () {
+
+	int l1,l2,l3;
+
+	printf ("Informe o primeiro lado do triangulo:");
+	scanf ("%i",&l1);
+	printf ("Informe o segundo lado do triangulo:");
+	scanf ("%i",&l2);
+	printf ("Informe o terceiro lado do triangulo:");
+	scanf ("%i",&l3);
+	
+	if (l2-l3<l1<l2+l3||l1-l3<l2<l1+l3||l1+l2<l3<l1+l2)
+	{
+
+		if (l1>l2&&l1>l3)
+		{
+			if (l1*l1==l2*l2+l3*l3)
+		{
+			printf ("Temos um triângulo retângulo");
+		}
+		else if (l1*l1>l2*l2+l3*l3)
+		{
+			printf ("Temos um triângulo obtusângulo");
+		}
+		else if (l1*l1<l2*l2+l3*l3)
+		{
+			printf ("Temos um triângulo acutângulo");
+		}
+		
+		}
+
+		else if (l2>l1&&l2>l3)
+		{
+			if (l2*l2==l1*l1+l3*l3)
+		{
+			printf ("Temos um triângulo retângulo");
+		}
+		else if (l2*l2>l1*l1+l3*l3)
+		{
+			printf ("Temos um triângulo obtusângulo");
+		}
+		else if (l2*l2<l1*l1+l3*l3)
+		{
+			printf ("Temos um triângulo acutângulo");
+		}
+		}
+		else if (l3>l1&&l3>l2)
+		{		
+		
+			if (l3*l3==l2*l2+l1*l1)
+		{
+				printf ("Temos um triângulo retângulo");
+		}
+			else if (l3*l3>l2*l2+l1*l1)
+		{
+				printf ("Temos um triângulo obtusângulo");
+		}
+			else if (l3*l3<l2*l2+l1*l1)
+		{
+				printf ("Temos um triângulo acutângulo");
+		}
+
+	}	
+	
+	}
+	else
+	{
+		printf("Não é triângulo!");
+	}
+
+return 0;
+}

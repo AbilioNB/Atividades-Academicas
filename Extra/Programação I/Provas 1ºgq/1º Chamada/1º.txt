@@ -1,0 +1,32 @@
+1)
+#include <stdio.h>
+
+int main (){
+	//var
+	int cont=1,mes=0;
+	float vl,vl_t=0,vl_max=0;
+
+	//exec
+	while (cont<=12)
+	{
+		printf("Informe o valor arecadado  no %iº  mes:",cont);
+		scanf("%f",&vl);
+		while (vl<0)
+		{
+			printf("VALOR INFORMADO INVALIDO!!!!");
+			printf("Informe um valor maior ou igual a zero:");
+			scanf("%f",&vl);
+		}
+		vl_t=vl + vl_t;
+		if (vl_max<vl)
+		{
+			vl_max=vl;
+			mes=cont;
+		}
+		cont=cont+1;
+	}
+	//fim do while
+	printf("O total arrecadado no ano de 2015 foi R$ %.2f",vl_t);
+	printf("O mes de maior arrecadação foi : %iº mês",mes);
+return 0;
+}

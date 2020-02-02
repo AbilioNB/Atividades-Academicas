@@ -1,0 +1,39 @@
+5)
+#include <stdio.h>
+
+int main () {
+	
+	//var
+	int cont=0;
+	float  sl=1,sl_t=0,sl_max=0,med=0;
+	//exec
+	while(sl!=0)
+	{
+		printf("Infome o salario recebido : [tecle 0 para encerrar]");
+		scanf("%f",&sl);
+		while (sl<0)
+		{
+			printf("VALOR INVALIDO!!INFORME UM VALOR MAIOR QUE 0 !!!!!");
+			scanf("%f",&sl);
+		}	
+		sl_t=sl+sl_t;
+		if (sl>sl_max)
+		{
+			sl_max=sl;		
+		}
+		if(sl!=0)
+		{
+			cont=cont+1;
+		}
+	}
+	//fim do while 
+	//foi informado um novo while pois estava dando erro de memoria na variavel "med"
+	while (cont>0)
+	{
+		med=sl_t/cont;
+		printf("A media de salario foi de R$ %.2f\n",med);
+		printf("E o maior salario foi de : R$ %.2f\n",sl_max);
+	}
+return 0;
+
+}

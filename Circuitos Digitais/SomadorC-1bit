@@ -1,0 +1,19 @@
+module meio_somador(A,B,S,C);
+input A,B;
+output S,C;
+
+assign S = A ^ B;//Xor para fazer a soma
+assign C = A & B;//E para fazer o carry out
+endmodule // meio_somador
+
+module Somador_completo_1b(A,B,C_in,Soma,C_out);
+
+input A,B,C_in;
+output Soma,C_out;
+wire Carry1,Carry2,Soma_1;
+
+meio_somador M1(A,B,Soma_1,Carry1);
+meio_somador M2(C_in,Soma_1,Soma,Carry2);
+or  (C_out,Carry1,Carry2);
+
+endmodule // Somador_completo_1b

@@ -1,0 +1,42 @@
+6) 
+#include <stdio.h>
+
+int main()
+{
+
+	int ct = 0, id = 0, vt = 0, nvt = 0, pvt = 0, pnvt = 0;
+
+while (ct<100)
+{ 
+	ct = ct + 1;
+	printf("Informe sua Idade :\n");
+		scanf("%i", &id);
+		
+		while (id< 0 || id>120)
+		{
+			printf("IDADE INVÁLIDA!!!\n");
+			printf("Informe um idade válida:\n");
+			scanf("%i", &id);
+		}
+		if (18<id&&id<90)
+		{
+			printf("Esta pessoa tem %.0i anos e pode votar! \n", id);
+			vt = vt + 1;
+		}
+		else {
+
+			printf("Esta pessoa tem %.0i anos e  não pode votar! \n", id);
+			nvt = nvt + 1;
+		}
+	
+} 
+
+	printf("O total de VOTANTES foi: %.0i\n", vt);
+	pvt = (vt * 100) / ct;
+		printf("A porcentagem dos VOTANTES foi :%.0i%%\n", pvt);
+	printf("O total de NÃO VOTANTES foi: %.0i\n", nvt);
+	pnvt = (nvt * 100) / ct;
+		printf("A porcentagem dos NÃO VOTANTES foi :%.0i%%\n", pnvt);
+
+	return 0;
+}

@@ -1,0 +1,21 @@
+1)
+#include <stdio.h>
+
+int main () {
+
+	int n;
+
+	printf ("Informe o Número:");
+	scanf ("%i",&n);
+
+	if (n>=1&&n<=9)
+	{
+		printf ("O valor está dentro da faixa permitida.");
+	}
+
+	else
+	{
+		printf("O valor não está  dentro da faixa permitida");
+	}
+	return 0;
+}

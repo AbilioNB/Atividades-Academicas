@@ -1,0 +1,77 @@
+8)
+
+#include <stdio.h>
+
+int main() {
+	char resp = 's';
+	float inv, luc_1, luc_2, luc_3;
+
+
+
+	while (resp == 's')
+	{
+		printf("Quanto deseja investir ?\n");
+		printf("Valores mínimos:\n");
+		printf("Poupança ---> R$ 100,00              Fundos de Renda Fixa ---> R$1000,00           CDBs ---> R$2500,00.\n");
+		scanf("%f", &inv);
+		while (inv <= 0)
+		{
+			printf("INVESTIMENTO INVÁLIDO!!!\n");
+			printf("Informe um investimento válido:\n");
+			scanf("%f", &inv);
+		}
+
+
+
+
+		if (inv >= 100 && inv<1000)
+		{
+			luc_1 = inv*0.0005;
+			printf("Aplicação-------------------Rentabilidade Mensal\n");
+			printf("Poupança-------------------- R$ %.1f\n", luc_1);
+
+
+		}
+
+		else if (inv>100 && inv<2500)
+		{
+			luc_1 = inv*0.0005;
+			luc_2 = inv*0.001;
+			printf("Aplicação-------------------Rentabilidade Mensal\n");
+			printf("Poupança-------------------- R$ %.1f\n", luc_1);
+			printf("Fundo de Renda Fixa--------- R$ %.1f\n", luc_2);
+
+
+
+		}
+		else if (inv >= 2500)
+		{
+			luc_1 = inv*0.0005;
+			luc_2 = inv*0.001;
+			luc_3 = inv*0.0015;
+			printf("Aplicação--------------------Rentabilidade Mensal\n");
+			printf("Poupança-------------------- R$ %.1f\n", luc_1);
+			printf("Fundo de Renda Fixa--------- R$ %.1f\n", luc_2);
+			printf("CDBs------------------------ R$ %.1f\n", luc_3);
+		}
+
+		// teste de encerramento
+		printf("Deseja analisar a situação de outro usuário ? (s/n)");
+		scanf(" %c", &resp);
+
+		while (resp != 's'&&resp != 'n'&&resp != 'S'&&resp != 'N')
+		{
+			printf("OPÇÃO INVÁLIDO!!!\n");
+			printf("Informe [s] se deseja continuar e [n] se deseja encerrar ! \n");
+			scanf(" %c", &resp);
+		}
+
+		if (resp == 'n' || resp == 'N')
+		{
+			resp = 'n';
+
+		}
+	}
+
+	return 0;
+}

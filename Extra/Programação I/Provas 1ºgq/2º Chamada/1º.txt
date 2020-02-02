@@ -1,0 +1,56 @@
+#include <stdio.h>
+int main()
+{
+	//var
+	float p, h, imc, p_normal = 0, aci_p = 0, obesidade = 0, obes_m = 0, percN, percAI, percO, percOM;
+	int cont = 1;
+
+	//exec
+	while (cont <=50) 
+{
+
+		printf("\n");
+		printf("\n informe o valor do peso em quilogramas: \n");
+		scanf("%f", &p);
+		while (p < 0 || p > 300) {
+			printf("peso invalido. digite o valor entre 0 a 300:");
+			scanf("%f", &p);
+		}
+		printf("informe o valor da altura em metros: \n");
+		scanf("%f", &h);
+		while (h < 1 || h > 3) {
+			printf("altura invalida. digite o valor entre 1 a 3");
+			scanf("%f", &h);
+		}
+		imc = p / (h*h);
+		if (imc < 25.0) {
+			printf("situação: peso normal, seu imc eh: %.1f\n", imc);
+			p_normal = p_normal + 1;
+		}
+		else if (imc > 25.0 && imc <= 30.0) {
+			printf("situação: peso pouco acima do ideal, seu imc eh: %.1f\n", imc);
+			aci_p = aci_p + 1;
+		}
+		else if (imc > 30.0 && imc <= 40.0) {
+			printf("situação: obesidade, seu imc eh: %.1f\n", imc);
+			obesidade = obesidade + 1;
+		}
+		else {
+			printf("situaçao: obesidade morbida, o seu imc eh: %.1f\n", imc);
+			obes_m = obes_m + 1;
+		}
+	cont = cont + 1;
+	}
+	//fim do while 
+	percN = (p_normal * 100) / cont;
+	percAI = (aci_p * 100) / cont;
+	percO = (obesidade * 100) / cont;
+	percOM = (obes_m * 100) / cont;
+	//exibição
+	printf("o percentual de pessoas com peso normal eh: %.1f\n", percN);
+	printf("o percentual de pessoas com peso acima do ideal eh:%.1f\n", percAI);
+	printf("o percentual de pessoas com obesidade eh:%.1f\n", percO);
+	printf("o percentual de pessoas com obesidade morbida eh:%.1f\n", percOM);
+
+	return 0;
+}

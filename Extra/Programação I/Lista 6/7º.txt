@@ -1,0 +1,80 @@
+7)
+
+#include <stdio.h>
+
+int main()
+{
+
+	//var 
+	char y = "";
+	int x = 0;
+
+
+	//start 
+
+
+	printf("Informe o caractere:\n");
+	printf("para finalizar é só digitar # \n");
+	scanf(" %c", &y);
+	while (y != '#')
+	{
+
+		if (x == 18)
+		{
+			printf("\n Digite o caractere:");
+		}
+		//de char -> int 
+		scanf(" %c", &y);
+		x = (int)y;
+
+		//number
+		if (x >= 48 && x <= 57)
+		{
+			printf("%c = um número");
+		}
+
+		//simbolo x!= 36
+		if (x >= 33 && x <= 47 || x >= 58 && x <= 64)
+		{
+			printf("%c = um símbolo\n", y);
+		}
+
+		//letras caixa-alta
+		if (x >= 65 && x <= 90)
+		{
+			//vogal
+			if (x == 65 || x == 69 || x == 73 || x == 79 || x == 85)
+			{
+				printf("%c = uma vogal caixa-alta\n", y);
+			}
+			else
+			{
+				printf("%c = uma consoante em caixa-alta \n", y);
+			}
+		}
+
+		//letras 
+		if (x >= 97 && x <= 122)
+		{
+			//vogal
+			if (x == 97 || x == 101 || x == 105 || x == 111 || x == 117)
+			{
+				printf("%c = uma vogal \n", y);
+			}
+			else
+			{
+				printf("%c = uma consoante \n", y);
+			}
+		}
+
+		//digitos
+
+		if (x >= 48 && x <= 57)
+		{
+			printf("%c = um digito \n", y);
+		}
+	}
+
+
+	return 0;
+}

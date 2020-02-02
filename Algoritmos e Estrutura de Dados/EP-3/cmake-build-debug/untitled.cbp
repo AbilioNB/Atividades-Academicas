@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled">
+				<Option output="A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/untitled.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled"/>
+					<CompileFile command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled/fast">
+				<Option output="A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/untitled.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="a:\programas\minigw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled/fast"/>
+					<CompileFile command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programas/MiniGw/bin/mingw32-make.exe -f &quot;A:/GitHub/Ep-s/EP-s/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/fila.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/fila.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/hash.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/hash.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/main.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/pilha.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/pilha.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/GitHub/Ep-s/EP-s/untitled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

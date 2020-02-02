@@ -1,0 +1,73 @@
+10)
+
+#include <stdio.h>
+
+int main()
+{
+	int ct=0,ctm=0,ctf=0;
+	float alt,alt_min=2.1,ct_alt_m=0,ct_alt_f=0,med_f=0,med_h=0;
+	char sx = 's',sx_min='s';
+
+	while (ct<50)
+	{
+		printf("Informe seu sexo : \n");
+			printf("M/m -> Masculino\n");
+			printf("F/f -> Feminino\n");
+			scanf(" %c",&sx);
+				while (sx!='M'&&sx!='m'&&sx!='F'&&sx!='f')
+					{
+						printf("INFORME UM OPÇÃO DE SEXO VÁLIDA\n");
+						printf("M/m -> Masculino\n");
+						printf("F/f -> Feminino\n");
+						scanf(" %c", &sx);
+					}
+		printf("Informe sua altura : ");
+		scanf("%f",&alt);
+			while (alt<0.5|| alt > 2.0)
+			{
+				printf("Informe um valor válido para altura");
+				scanf("%f", &alt);
+			}	
+	
+			if (sx=='M'||sx=='m')
+			{
+				ctm = ctm + 1;
+				ct_alt_m = alt + ct_alt_m;
+			}
+			else if (sx=='f'||sx=='F')
+			{
+				ctf = ctf + 1;
+				ct_alt_f = alt + ct_alt_f;
+			
+			}
+
+		
+			if (alt < alt_min)
+			{
+				sx_min = sx;
+				alt_min = alt;
+			}
+			ct = ct + 1;
+	}
+	//fim do while
+
+	med_h = ct_alt_m / ctm;
+	med_f = ct_alt_f / ctf;	
+	
+	printf("||||||||||||||||||||||||||||||||RESULTADO||||||||||||||||||||||||||||||||||||||||\n");
+	
+	printf("Altura média dos Homens: %.1f\n",med_h);
+	printf("Altura média das Mulheres:%.1f\n",med_f);
+	
+	if (sx_min=='m'||sx_min=='M')
+	{
+		printf("A menor altura informada foi %.1f e foi do sexo Masculino!\n",alt_min);
+	}
+	else if (sx_min == 'F' || sx_min == 'f')
+	{
+		printf("A menor altura informada foi %.1f e foi do sexo Feminino!\n", alt_min);
+	}
+
+
+	return 0;
+}

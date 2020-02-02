@@ -1,0 +1,52 @@
+2)
+#include <stdio.h>
+
+int main()
+{
+	float n1, n2, md;
+	int ctv = 0;
+
+	while (ctv < 30)
+	{
+
+
+		printf("Informe a nota da primeira prova:");
+		scanf("%f", &n1);
+		while (n1 > 10 || n1 < 0)
+		{
+			printf("NOTA INVÁLIDA!!\n");
+			printf("Informe um nota válida! \n");
+			scanf("%f", &n1);
+		}
+		printf("Informe a nota da segunda prova:");
+		scanf("%f", &n2);
+		while (n2 > 10 || n2 < 0)
+		{
+			printf("NOTA INVÁLIDA!!\n");
+			printf("Informe um nota válida! \n");
+			scanf("%f", &n2);
+		}
+
+		md = (n1 + n2) / 2;
+
+		if (md >= 7)
+		{
+
+			printf("O aluno obteve média %.2f e está aprovado!\n", md);
+		}
+		else if (md < 3)
+		{
+
+			printf("O aluno obteve média %.2f e está reprovado!\n", md);
+		}
+		else if (md < 7 && md>3)
+		{
+
+			printf("O aluno obteve média %.2f e está em recuperação!\n", md);
+		}
+		ctv = ctv + 1;
+
+
+	}
+	return 0;
+}

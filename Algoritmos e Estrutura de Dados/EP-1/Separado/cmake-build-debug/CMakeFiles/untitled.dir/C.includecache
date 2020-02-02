@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/abili/Documents/GitHub/EP-s/EP-1/untitled/func.c
+headrs.h
+/cygdrive/c/Users/abili/Documents/GitHub/EP-s/EP-1/untitled/headrs.h
+
+/cygdrive/c/Users/abili/Documents/GitHub/EP-s/EP-1/untitled/headrs.h
+stdio.h
+-
+stdlib.h
+-
+
+/cygdrive/c/Users/abili/Documents/GitHub/EP-s/EP-1/untitled/testes.c
+headrs.h
+/cygdrive/c/Users/abili/Documents/GitHub/EP-s/EP-1/untitled/headrs.h
+
