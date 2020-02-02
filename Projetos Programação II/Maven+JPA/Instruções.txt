@@ -1,0 +1,12 @@
+1) Cria-se o projeto;
+2) Converte para Maven;
+3) Joga o arquivo tipo mave no pom.xml
+4) Joga o arquivo persistence.xml para a META-INF que fica dentro do resources
+5)EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistarq");
+        EntityManager em = emf.createEntityManager();
+
+        em.getTransaction().begin();
+       
+        em.getTransaction().commit();
+        em.close();
+        emf.close();
